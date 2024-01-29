@@ -3,7 +3,6 @@ from pydantic import ValidationError
 
 from exceptions import PointsListNotNumbersException
 from validators import DiapasonValidator
-import utils
 
 
 class Diapason:
@@ -39,7 +38,7 @@ class Diapason:
         return self.end_point - self.start_point
 
     def touch(self, other) -> bool:
-        return utils.diapasons_touch(self, other)
+        return diapasons_touch(self, other)
 
     def __len__(self):
         return self.length
@@ -57,19 +56,29 @@ class Diapason:
         return Diapason(points=self.points + other.points)
 
     def __contains__(self, item):
-        return utils.diapason_contains(item, self)
+        return diapason_contains(self, item)
 
 
-# if __name__ == '__main__':
-#     d1 = Diapason([6, 7, 8])
-#     d2 = Diapason([6, 7, "lllll"])
-#
-#     print(d1 == d2)
-#     print(d1 != d2)
-#     print(d1.points == d2.points)
-#     print(d1 in d2)
-#     print(d1.touch(d2))
-#     print(d1 == d2)
-#     print(d1)
-#     print(d2)
-#     print(d1 + d2)
+def diapasons_touch(d_1: Diapason, d_2: Diapason) -> bool:
+    """
+    d_1 = Diapason([1, 2])
+    d_2 = Diapason([2, 3])
+    d_1.touch(d_2)
+    True
+    """
+
+    if d_1.start_point <= d_2.start_point <= d_1.end_point:
+        return True
+    if d_1.start_point <= d_2.end_point <= d_1.end_point:
+        return True
+    return False
+
+
+def diapason_contains(d_1: Diapason, d_2: Diapason) -> bool:
+    """
+    d_2 in d_1
+    """
+    if d_1.start_point <= d_2.start_point < d_1.end_point:
+        if d_1.start_point < d_2.end_point <= d_1.end_point:
+            return True
+    return False
