@@ -85,3 +85,37 @@ class DiapasonTestCase(unittest.TestCase):
         d_3 = Diapason([3, 4])
         self.assertTrue(d_1.intersects(d_2))
         self.assertFalse(d_3.intersects(d_1))
+
+    def test_diapason_distance(self):
+        d_1 = Diapason([1, 3])
+        d_2 = Diapason([2, 4])
+        d_3 = Diapason([5, 6])
+        self.assertEqual(
+            d_2.distance(d_1),
+            0
+        )
+        self.assertEqual(
+            d_3.distance(d_1),
+            2
+        )
+
+    def test_move(self):
+        d_1 = Diapason([1, 3])
+        d_1.move(5)
+        self.assertEqual(
+            d_1.length,
+            2
+        )
+        self.assertEqual(
+            d_1.start_point,
+            6
+        )
+        self.assertEqual(
+            d_1.end_point,
+            8
+        )
+        d_1.move(-1)
+        self.assertEqual(
+            d_1.points,
+            [5, 7]
+        )

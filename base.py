@@ -1,7 +1,7 @@
-from typing import List, Union
+from typing import List, Union, Tuple
 from pydantic import ValidationError
 
-from exceptions import PointNotNumbersException
+from exceptions import PointNotNumbersException, PointNotInDiapasonExeption
 from validators import DiapasonValidator
 
 
@@ -45,6 +45,12 @@ class Diapason:
 
     def crosses(self, other) -> bool:
         return crosses(self, other)
+
+    def distance(self, other) -> float:
+        return distance(self, other)
+
+    def move(self, step: float) -> None:
+        move(self, step)
 
     def __len__(self):
         return self.length
@@ -121,3 +127,30 @@ def contains(d_1: Diapason, d_2: Diapason) -> bool:
 def common(diapasons_list: List[Diapason]):
     pass
 
+
+def distance(d_1: Diapason, d_2: Diapason):
+    if d_1.touch(d_2):
+        return 0
+    return min(
+        abs(d_1.end_point - d_2.start_point),
+        abs(d_1.start_point - d_2.end_point)
+    )
+
+
+def move(diapason: Diapason, step: float):
+    for index, _ in enumerate(diapason.points):
+        diapason.points[index] += step
+    diapason.start_point = min(diapason.points)
+    diapason.end_point = max(diapason.points)
+
+
+def split_by_point(diapason: Diapason, split_point: float) -> Tuple[Diapason]:
+    if not Diapason([split_point]).touch(diapason) or Diapason([split_point]).crosses(diapason):
+        raise PointNotInDiapasonExeption(
+            f'Point {split_point} not in diapason {diapason}'
+        )
+    left_d = Diapason(
+        [p for p in diapason.points if p <= split_point]
+    )
+
+    
