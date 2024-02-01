@@ -1,3 +1,3 @@
-class PointsListNotNumbersException(Exception):
+class PointNotNumbersException(Exception):
     pass
 
