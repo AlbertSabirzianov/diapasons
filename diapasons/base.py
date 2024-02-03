@@ -166,6 +166,7 @@ def distance(d_1: Diapason, d_2: Diapason):
 
 
 def refresh(diapason: Diapason) -> None:
+    diapason.points.sort()
     diapason.start_point = min(diapason.points)
     diapason.end_point = max(diapason.points)
 
