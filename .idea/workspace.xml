@@ -6,12 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="20ea6bd2-dae8-4b8d-a4f6-508e8ccbd4da" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/diapasons/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/diapasons/exceptions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_diaoason.py" beforeDir="false" afterPath="$PROJECT_DIR$/diapasons/test_diapason.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/validators.py" beforeDir="false" afterPath="$PROJECT_DIR$/diapasons/validators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +54,12 @@
       <recent name="C:\Users\Lenovo\PycharmProjects\diapasons" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="pip install diapasons" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.base">
     <configuration name="base" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="diapasons" />
       <option name="ENV_FILES" value="" />
@@ -97,7 +97,7 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for diapasons.test_diapason.DiapasonTestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for diapasons.tests.DiapasonTestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="diapasons" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -108,11 +108,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;diapasons.test_diapason.DiapasonTestCase&quot;" />
+      <option name="_new_target" value="&quot;diapasons.tests.DiapasonTestCase&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for diapasons.test_diapason.DiapasonTestCase.test_overlaps" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for diapasons.tests.DiapasonTestCase.test_overlaps" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="diapasons" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -123,7 +123,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;diapasons.test_diapason.DiapasonTestCase.test_overlaps&quot;" />
+      <option name="_new_target" value="&quot;diapasons.tests.DiapasonTestCase.test_overlaps&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -144,9 +144,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for diapasons.test_diapason.DiapasonTestCase" />
+        <item itemvalue="Python tests.Python tests for diapasons.tests.DiapasonTestCase" />
         <item itemvalue="Python tests.Python tests for test_diaoason.DiapasonTestCase" />
-        <item itemvalue="Python tests.Python tests for diapasons.test_diapason.DiapasonTestCase.test_overlaps" />
+        <item itemvalue="Python tests.Python tests for diapasons.tests.DiapasonTestCase.test_overlaps" />
         <item itemvalue="Python.base" />
       </list>
     </recent_temporary>
