@@ -5,15 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20ea6bd2-dae8-4b8d-a4f6-508e8ccbd4da" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/diapasons.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/diapasons/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/diapasons/exceptions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_diaoason.py" beforeDir="false" afterPath="$PROJECT_DIR$/diapasons/test_diapason.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validators.py" beforeDir="false" afterPath="$PROJECT_DIR$/diapasons/validators.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +43,7 @@
   &quot;keyToString&quot;: {
     &quot;Python tests.Python tests for test_diaoason.DiapasonTestCase.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for test_diaoason.DiapasonTestCase.test_overlaps.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_diapason.DiapasonTestCase.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for tests.test_diaoason.DiapasonTestCase.executor&quot;: &quot;Run&quot;,
     &quot;Python.base.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
@@ -54,7 +53,13 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python tests.Python tests for test_diaoason.DiapasonTestCase">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Lenovo\PycharmProjects\diapasons\diapasons" />
+      <recent name="C:\Users\Lenovo\PycharmProjects\diapasons" />
+    </key>
+  </component>
+  <component name="RunManager">
     <configuration name="base" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="diapasons" />
       <option name="ENV_FILES" value="" />
@@ -68,7 +73,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/base.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Lenovo\PycharmProjects\diapasons\diapasons\base.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -92,6 +97,36 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for diapasons.test_diapason.DiapasonTestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="diapasons" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;diapasons.test_diapason.DiapasonTestCase&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for diapasons.test_diapason.DiapasonTestCase.test_overlaps" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="diapasons" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;diapasons.test_diapason.DiapasonTestCase.test_overlaps&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for test_diaoason.DiapasonTestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="diapasons" />
       <option name="ENV_FILES" value="" />
@@ -107,41 +142,11 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_diaoason.DiapasonTestCase.test_overlaps" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="diapasons" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_diaoason.DiapasonTestCase.test_overlaps&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for tests.test_diaoason.DiapasonTestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="diapasons" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.test_diaoason.DiapasonTestCase&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for diapasons.test_diapason.DiapasonTestCase" />
         <item itemvalue="Python tests.Python tests for test_diaoason.DiapasonTestCase" />
-        <item itemvalue="Python tests.Python tests for test_diaoason.DiapasonTestCase.test_overlaps" />
-        <item itemvalue="Python tests.Python tests for tests.test_diaoason.DiapasonTestCase" />
+        <item itemvalue="Python tests.Python tests for diapasons.test_diapason.DiapasonTestCase.test_overlaps" />
         <item itemvalue="Python.base" />
       </list>
     </recent_temporary>

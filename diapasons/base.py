@@ -154,6 +154,9 @@ def contains(d_1: Diapason, d_2: Diapason) -> bool:
 
 
 def distance(d_1: Diapason, d_2: Diapason):
+    """
+    Diapason([1, 2]).distance(Diapason([3, 4])) -> 1
+    """
     if d_1.touch(d_2):
         return 0
     return min(

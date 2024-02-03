@@ -1,7 +1,7 @@
 import unittest
 
 from base import Diapason
-from exceptions import PointNotInDiapasonException, SplitByNotOverlapsDiapason, PointNotNumberException
+from exceptions import PointNotNumberException, PointNotInDiapasonException, SplitByNotOverlapsDiapason
 
 
 class DiapasonTestCase(unittest.TestCase):
