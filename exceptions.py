@@ -1,7 +1,10 @@
-class PointNotNumbersException(Exception):
+class PointNotNumberException(Exception):
     pass
 
 
-class PointNotInDiapasonExeption(Exception):
+class PointNotInDiapasonException(Exception):
     pass
 
+
+class SplitByNotOverlapsDiapason(Exception):
+    pass
