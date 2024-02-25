@@ -2,8 +2,8 @@ from typing import List, Union, Optional
 
 from pydantic import ValidationError
 
-from exceptions import PointNotNumberException, PointNotInDiapasonException, SplitByNotOverlapsDiapason
-from validators import DiapasonValidator
+from .exceptions import PointNotNumberException, PointNotInDiapasonException, SplitByNotOverlapsDiapason
+from .validators import DiapasonValidator
 
 
 class Diapason:
@@ -109,6 +109,8 @@ def touch(d_1: Diapason, d_2: Diapason) -> bool:
     if d_1.start_point <= d_2.start_point <= d_1.end_point:
         return True
     if d_1.start_point <= d_2.end_point <= d_1.end_point:
+        return True
+    if d_2.start_point < d_1.start_point and d_2.end_point > d_1.end_point:
         return True
     return False
 

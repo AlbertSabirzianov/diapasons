@@ -8,7 +8,7 @@ def readme():
 
 setup(
   name='diapasons',
-  version='0.0.1',
+  version='0.0.3',
   author='a.sabirzianov',
   author_email='albertuno@mail.com',
   description='simple library for working with data that can be represented as a set of points on a straight line.',
